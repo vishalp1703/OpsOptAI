@@ -1,0 +1,32 @@
+# OpsPilot AI dependencies
+# Install with: python -m pip install -r requirements.txt
+
+# Data ingestion and validation
+pandas>=2.2.0
+openpyxl>=3.1.2
+pydantic>=2.7.0
+python-dateutil>=2.9.0
+Faker>=25.0.0
+
+# LLM classification and HTTP clients
+python-dotenv>=1.0.0
+requests>=2.31.0
+tenacity>=8.2.3
+
+# Database
+sqlalchemy>=2.0.0
+# PostgreSQL production driver (SQLite remains the default local database)
+psycopg[binary]>=3.2.0
+
+# Dashboard
+streamlit>=1.38.0
+plotly>=5.22.0
+
+# Real-time ingestion API and scheduler
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+apscheduler>=3.10.0
+httpx>=0.27.0
+
+# Development and test tooling
+pytest>=8.0.0

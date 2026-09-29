@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.local
+.env.*
+!.env.example
+*openrouter*key*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local integration configuration may contain credentials or private endpoints
+integrations/sources.json
+
+# Generated schema mappings
+data/schema_mappings/
+
+# Local datasets and generated outputs; keep the documented placeholders
+data/raw/*
+!data/raw/.gitkeep
+data/cleaned/*
+!data/cleaned/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+outputs/*
+!outputs/.gitkeep

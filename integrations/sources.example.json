@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "name": "vendor-reviews-export",
+      "kind": "file",
+      "enabled": false,
+      "target_source": "customer_reviews",
+      "file_path": "data/raw/customer_reviews.csv",
+      "mapping": {}
+    },
+    {
+      "name": "external-crm",
+      "kind": "database",
+      "enabled": false,
+      "target_source": "crm_notes",
+      "database_url_env": "EXTERNAL_CRM_DATABASE_URL",
+      "table": "customer_notes",
+      "cursor_column": "updated_at",
+      "mapping": {"id": "id", "store": "account_name", "date": "created_at", "text": "note"}
+    }
+  ]
+}
